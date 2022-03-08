@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sampler_generator.srcs/sources_1/imports/VivadoProjects/delay_line/delay_line.srcs/sources_1/new/delay_line.vhd" \
+"../../../../sampler_generator.srcs/sources_1/imports/VivadoProjects/pulse_generator/pulse_generator.srcs/sources_1/new/pulse_gen.vhd" \
+"../../../../sampler_generator.srcs/sources_1/new/sampler_generator.vhd" \
+"../../../../sampler_generator.srcs/sources_1/imports/VivadoProjects/project_2/project_2.srcs/sources_1/new/sampler_state_machine.vhd" \
+"../../../../sampler_generator.srcs/sim_1/new/tb_sampler_generator.vhd" \
+
+# Do not sort compile order
+nosort

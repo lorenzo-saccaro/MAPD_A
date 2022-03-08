@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/loren/latch_flipflop/latch_flipflop.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cmb_clk'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/loren/latch_flipflop/latch_flipflop.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_cmb_clk'

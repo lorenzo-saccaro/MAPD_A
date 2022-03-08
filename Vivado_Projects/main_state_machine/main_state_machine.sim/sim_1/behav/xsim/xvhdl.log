@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/loren/VivadoProjects/main_state_machine/main_state_machine.srcs/sources_1/new/main_state_machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_state_machine'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/loren/VivadoProjects/main_state_machine/main_state_machine.srcs/sim_1/new/tb_main_state_machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_main_state_machine'

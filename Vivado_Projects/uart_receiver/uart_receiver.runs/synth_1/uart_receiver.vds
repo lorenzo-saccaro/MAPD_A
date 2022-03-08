@@ -1,0 +1,333 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 22 11:46:48 2021
+# Process ID: 8440
+# Current directory: C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.runs/synth_1
+# Command line: vivado.exe -log uart_receiver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_receiver.tcl
+# Log file: C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.runs/synth_1/uart_receiver.vds
+# Journal file: C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uart_receiver.tcl -notrace
+Command: synth_design -top uart_receiver -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19256 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 362.496 ; gain = 100.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uart_receiver' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/new/uart_receiver.vhd:41]
+INFO: [Synth 8-3491] module 'sampler_generator' declared at 'C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/sampler_generator/sampler_generator.srcs/sources_1/new/sampler_generator.vhd:34' bound to instance 'sampler_gen' of component 'sampler_generator' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/new/uart_receiver.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'sampler_generator' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/sampler_generator/sampler_generator.srcs/sources_1/new/sampler_generator.vhd:40]
+INFO: [Synth 8-3491] module 'pulse_gen' declared at 'C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/pulse_generator/pulse_generator.srcs/sources_1/new/pulse_gen.vhd:34' bound to instance 'pulse_gen_0' of component 'pulse_gen' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/sampler_generator/sampler_generator.srcs/sources_1/new/sampler_generator.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'pulse_gen' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/pulse_generator/pulse_generator.srcs/sources_1/new/pulse_gen.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'pulse_gen' (1#1) [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/pulse_generator/pulse_generator.srcs/sources_1/new/pulse_gen.vhd:40]
+INFO: [Synth 8-3491] module 'sampler_state_machine' declared at 'C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/project_2/project_2.srcs/sources_1/new/sampler_state_machine.vhd:34' bound to instance 'sampler_state_machine_0' of component 'sampler_state_machine' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/sampler_generator/sampler_generator.srcs/sources_1/new/sampler_generator.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'sampler_state_machine' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/project_2/project_2.srcs/sources_1/new/sampler_state_machine.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'sampler_state_machine' (2#1) [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/project_2/project_2.srcs/sources_1/new/sampler_state_machine.vhd:41]
+INFO: [Synth 8-3491] module 'delay_line' declared at 'C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/delay_line/delay_line.srcs/sources_1/new/delay_line.vhd:34' bound to instance 'delay_line_0' of component 'delay_line' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/sampler_generator/sampler_generator.srcs/sources_1/new/sampler_generator.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'delay_line' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/delay_line/delay_line.srcs/sources_1/new/delay_line.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'delay_line' (3#1) [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/delay_line/delay_line.srcs/sources_1/new/delay_line.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'sampler_generator' (4#1) [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/sampler_generator/sampler_generator.srcs/sources_1/new/sampler_generator.vhd:40]
+INFO: [Synth 8-3491] module 'main_state_machine' declared at 'C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/main_state_machine/main_state_machine.srcs/sources_1/new/main_state_machine.vhd:34' bound to instance 'main_state' of component 'main_state_machine' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/new/uart_receiver.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'main_state_machine' [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/main_state_machine/main_state_machine.srcs/sources_1/new/main_state_machine.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'main_state_machine' (5#1) [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/imports/VivadoProjects/main_state_machine/main_state_machine.srcs/sources_1/new/main_state_machine.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'uart_receiver' (6#1) [C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.srcs/sources_1/new/uart_receiver.vhd:41]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.812 ; gain = 157.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.812 ; gain = 157.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.812 ; gain = 157.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "pulse_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sampler_state_machine'
+INFO: [Synth 8-5544] ROM "enable" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "baudrate_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'main_state_machine'
+INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "valid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                      00000000001 |                             0000
+                   start |                      00000000010 |                             0001
+                     lsb |                      00000000100 |                             0010
+                    bit1 |                      00000001000 |                             0011
+                    bit2 |                      00000010000 |                             0100
+                    bit3 |                      00000100000 |                             0101
+                    bit4 |                      00001000000 |                             0110
+                    bit5 |                      00010000000 |                             0111
+                    bit6 |                      00100000000 |                             1000
+                    bit7 |                      01000000000 |                             1001
+                    stop |                      10000000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'sampler_state_machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                       0000000001 |                             0000
+                     lsb |                       0000000010 |                             0001
+                    bit1 |                       0000000100 |                             0010
+                    bit2 |                       0000001000 |                             0011
+                    bit3 |                       0000010000 |                             0100
+                    bit4 |                       0000100000 |                             0101
+                    bit5 |                       0001000000 |                             0110
+                    bit6 |                       0010000000 |                             0111
+                    bit7 |                       0100000000 |                             1000
+                    stop |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'main_state_machine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.812 ; gain = 157.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 3     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pulse_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module sampler_state_machine 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 2     
+Module delay_line 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module main_state_machine 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "sampler_gen/pulse_gen_0/pulse_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sampler_gen/delay_line_0/baudrate_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 574.184 ; gain = 312.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 574.184 ; gain = 312.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |    13|
+|3     |LUT3 |    13|
+|4     |LUT4 |     7|
+|5     |LUT5 |    10|
+|6     |LUT6 |    15|
+|7     |FDRE |    52|
+|8     |IBUF |     2|
+|9     |OBUF |     9|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------------+----------------------+------+
+|      |Instance                    |Module                |Cells |
++------+----------------------------+----------------------+------+
+|1     |top                         |                      |   122|
+|2     |  main_state                |main_state_machine    |    40|
+|3     |  sampler_gen               |sampler_generator     |    70|
+|4     |    delay_line_0            |delay_line            |    26|
+|5     |    pulse_gen_0             |pulse_gen             |    28|
+|6     |    sampler_state_machine_0 |sampler_state_machine |    16|
++------+----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 574.539 ; gain = 312.730
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 674.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 674.625 ; gain = 421.070
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 674.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/loren/VivadoProjects/uart_receiver/uart_receiver.runs/synth_1/uart_receiver.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_receiver_utilization_synth.rpt -pb uart_receiver_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 22 11:47:02 2021...
